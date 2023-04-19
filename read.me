@@ -1,0 +1,16 @@
+This code represents the implementation of the ArrayList list in Java.
+
+It has a generalized type T and contains methods for adding, receiving, deleting elements, determining the size of the list, searching for the index of the first and last occurrence of an object in the list, as well as sorting list items.
+
+An array of objects of size 10 is created in the constructor. When adding an element, if the current size of the list is equal to the size of the array, then it is doubled using the Arrays.copyOf() method.
+
+When an element is deleted, the remaining elements are shifted one position to the left, and the size of the list is reduced by 1.
+
+The sort() method sorts the list items in ascending order.
+
+The get(), index Of() and lastIndexOf() methods perform the usual operations of getting an element by index, searching for the index of the first and last occurrence of an object in the list, respectively.
+
+If the index goes beyond the bounds of the list, the methods throw an IndexOutOfBoundsException exception.
+
+
+This code represents the implementation of a connected list with doubly connected nodes. The MyLinkedList<E> class has a nested Node class that represents a list node. The list is stored as references to the first and last nodes (head and tail, respectively), and also contains the size of the list (size). The add, get, and remove methods add, receive, and delete list items, respectively. The list is traversed in two directions for quick access to elements, as well as updating links to the previous and next nodes when adding and removing elements.
