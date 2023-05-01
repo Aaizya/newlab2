@@ -22,11 +22,19 @@ public class MyArrayListStack<T> {
     public T peek() {
         if (isEmpty()) {
             throw new EmptyStackException();
+        }
+        return stack.get(stack.size() - 1);
+    }
 
-            return stack.get(stack.size() - 1);
-        }
-// Returns true if the stack is empty, false otherwise
-        public boolean isEmpty () {
-            return stack.isEmpty();
-        }
+    // Returns true if the stack is empty, false otherwise
+    public boolean isEmpty() {
+        return stack.isEmpty();
+    }
+
+
+    public int size() {
+        return stack.size();
+    }
+
+
 
