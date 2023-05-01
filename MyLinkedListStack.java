@@ -28,3 +28,7 @@ public class MyLinkedListStack<T> {
     }
 
     public T peekMethod() // This function returns the elements but not removing it
+    {
+        if (isEmpty())
+        {
+            throw new EmptyStackException();
