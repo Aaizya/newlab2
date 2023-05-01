@@ -18,7 +18,7 @@ public class MyArrayListStack<T> {
         if (isEmpty()) {
             throw new EmptyStackException();
         }
-        return stack.remove(stack.size() - 1)
+        return stack.remove(stack.size() - 1);
     }
 
     // Returns the top element from the stack without removing it, throws an EmptyStackException if stack is empty
@@ -39,6 +39,7 @@ public class MyArrayListStack<T> {
         return stack.size();
     }
 }
+
 
 
 
