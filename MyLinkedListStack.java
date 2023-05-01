@@ -14,3 +14,8 @@ public class MyLinkedListStack<T> {
     }
 
     public boolean isEmpty() // This function checks, is stack empty and returns true or false
+    {
+        return stack.isEmpty();
+    }
+
+    public void popMethod() // This function removes and returns the top element of the stack.
