@@ -25,8 +25,8 @@ public class MyArrayListStack<T> {
 
             return stack.get(stack.size() - 1);
         }
-
-        public boolean isEmpty() {
+// Returns true if the stack is empty, false otherwise
+        public boolean isEmpty () {
             return stack.isEmpty();
         }
 
