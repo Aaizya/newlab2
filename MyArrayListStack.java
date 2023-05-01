@@ -16,6 +16,10 @@ public class MyArrayListStack<T> {
         if (isEmpty()) {
             throw new EmptyStackException();
         }
-        return stack.remove ( stack.size())
+        return stack.remove ( stack.size()-1)
     }
+    public T peek() {
+        if (isEmpty()) {
+            throw new EmptyStackException()
+
 
