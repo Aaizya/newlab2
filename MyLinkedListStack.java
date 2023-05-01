@@ -8,12 +8,12 @@ public class MyLinkedListStack<T> {
         stack = new LinkedList<T>();
     }
 
-    public void pushMethod(T data) // This function adds an element to the top of the stack.
+    public void pushMethod(T data) // This function add an element to the top of the stack
     {
         stack.addFirst(data);
     }
 
-    public boolean isEmpty() // This function checks, is stack empty and returns true or false
+    public boolean isEmpty() // This function checks that  stack empty and returns true or false
     {
         return stack.isEmpty();
     }
@@ -32,4 +32,5 @@ public class MyLinkedListStack<T> {
         if (isEmpty()) {
             throw new EmptyStackException();
         }
-        return stack.peec()
+        return stack.peek();
+
