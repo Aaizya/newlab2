@@ -7,14 +7,16 @@ public class MyLinkedListQueue<E> {
         queue = new LinkedList<>(); // initializing the LinkedList instance variable
     }
     // Removes and returns the front element of the queue using addLast method
-    public void enqueue( E element) {
-        queue.add(element);
+    public void enqueue(E element) {
+        queue.addLast(element);
     }
+
+    // Removes and returns the front element of the queue using removeFirst method
+    // Throws NoSuchElementException if queue is empty
     public E dequeue() {
         if (isEmpty()) {
-            throw new NosuchElementException();
+            throw new NoSuchElementException();
         }
-        return queue.remove();
-      }
+        return queue.removeFirst();
     }
-}
+
