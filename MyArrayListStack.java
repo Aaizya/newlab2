@@ -18,8 +18,11 @@ public class MyArrayListStack<T> {
         }
         return stack.remove ( stack.size()-1)
     }
+    // Returns the top element from the stack without removing it, throws an EmptyStackException if stack is empty
     public T peek() {
         if (isEmpty()) {
-            throw new EmptyStackException()
+            throw new EmptyStackException();
 
+            return stack.get(stack.size() - 1);
+        }
 
