@@ -10,7 +10,7 @@ public class MyArrayListStack<T> {
     }
 
     public void push(T element) {
-        stack.Add(element);
+        stack.add(element);
     }
 
     // Removes and returns the top element from the stack, throws an EmptyStackException if stack is empty
@@ -39,7 +39,6 @@ public class MyArrayListStack<T> {
         return stack.size();
     }
 }
-
 
 
 
