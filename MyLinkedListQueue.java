@@ -27,4 +27,13 @@ public class MyLinkedListQueue<E> {
         }
         return queue.getFirst();
     }
+    // Returns true if the queue is empty, false otherwise using isEmpty method
+    public boolean isEmpty() {
+        return queue.isEmpty();
+    }
 
+    // Returns the number of elements in the queue using size method
+    public int size() {
+        return queue.size();
+    }
+}
