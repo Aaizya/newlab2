@@ -3,8 +3,8 @@ import java.util.EmptyStackException;
 
 public class MyLinkedListStack<T> {
     private LinkedList<T> stack;
-    public MyLinkedListStack()
-    {
+
+    public MyLinkedListStack() {
         stack = new LinkedList<T>();
     }
 
@@ -20,8 +20,7 @@ public class MyLinkedListStack<T> {
 
     public void popMethod()    // This function removes and returns the top element of the stack.
     {
-        if (isEmpty())
-        {
+        if (isEmpty()) {
             throw new EmptyStackException();
         }
         stack.removeFirst();
@@ -33,4 +32,10 @@ public class MyLinkedListStack<T> {
             throw new EmptyStackException();
         }
         return stack.peek();
+    }
+
+    public int getsize()
+}
+}
+
 
