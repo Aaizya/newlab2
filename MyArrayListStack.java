@@ -8,16 +8,19 @@ public class MyArrayListStack<T> {
     public MyArrayListStack() {
         stack = new ArrayList<>();
     }
+
     public void push(T element) {
         stack.Add(element);
     }
+
     // Removes and returns the top element from the stack, throws an EmptyStackException if stack is empty
     public T pop() {
         if (isEmpty()) {
             throw new EmptyStackException();
         }
-        return stack.remove ( stack.size()-1)
+        return stack.remove(stack.size() - 1)
     }
+
     // Returns the top element from the stack without removing it, throws an EmptyStackException if stack is empty
     public T peek() {
         if (isEmpty()) {
@@ -31,10 +34,12 @@ public class MyArrayListStack<T> {
         return stack.isEmpty();
     }
 
-
+ // Returns the number of elements in the stack
     public int size() {
         return stack.size();
     }
+}
+
 
 
 
