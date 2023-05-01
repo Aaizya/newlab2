@@ -2,41 +2,44 @@ import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
 public class MyArrayListQueue<T> {
-    private MyArrayList<T> queue;
+    private ArrayList<T> queue;
 
-    public void enqueue(T data) // This function add data
-    {
-        queue.add(data);
+    // Constructor initializes an empty ArrayList queue
+    public MyArrayListQueue() {
+        queue = new ArrayList<>();
     }
 
-    public boolean isEmpty()   // This function checks, is queue empty and also  returns true or false
-    {
-        return queue.isEmpty();
+    // Adds the specified element to the end of the queue
+    public void enqueue(T element) {
+        queue.add(element);
     }
 
-    public T dequeue()   // This function removes and  also returns the front element of the queue
-    {
+    // Removes and returns the first element from the queue, throws a NoSuchElementException if queue is empty
+    public T dequeue() {
         if (isEmpty()) {
             throw new NoSuchElementException();
         }
         return queue.remove(0);
     }
 
-    public T peek() // This function returns the front element of the queue without removing it.
-    {
-        if (isEmpty())
-        {
+    // Returns the first element from the queue without removing it, throws a NoSuchElementException if queue is empty
+    public T peek() {
+        if (isEmpty()) {
             throw new NoSuchElementException();
         }
         return queue.get(0);
     }
 
-    public int getSize() // This function returns the number of elements in queue.
-    {
+    // Returns true if the queue is empty, false otherwise
+    public boolean isEmpty() {
+        return queue.isEmpty();
+    }
+
+    // Returns the number of elements in the queue
+    public int size() {
         return queue.size();
     }
 }
-
 
 
 

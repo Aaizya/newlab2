@@ -1,4 +1,4 @@
-#MyLinkListStack
+#MyLinkedListStack
 ---
 __This code is an implementation of a stack data structure using a linked list in Java.__
 
