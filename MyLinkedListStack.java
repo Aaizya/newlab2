@@ -18,4 +18,8 @@ public class MyLinkedListStack<T> {
         return stack.isEmpty();
     }
 
-    public void popMethod() // This function removes and returns the top element of the stack.
+    public void popMethod()    // This function removes and returns the top element of the stack.
+    {
+        if (isEmpty())
+        {
+            throw new EmptyStackException();
