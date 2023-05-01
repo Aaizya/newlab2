@@ -19,4 +19,12 @@ public class MyLinkedListQueue<E> {
         }
         return queue.removeFirst();
     }
+    // Returns the front element of the queue without removing it using getFirst method
+    // Throws NoSuchElementException if queue is empty
+    public E peek() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return queue.getFirst();
+    }
 
