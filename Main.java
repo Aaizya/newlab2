@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+/*import java.sql.SQLOutput;
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
@@ -13,13 +13,13 @@ public class Main {
         arrLis.add(7);
 
         System.out.println(arrLis.size());
-        arrLis.remove(5);
+       arrLis.remove(5);
         System.out.println(arrLis.size());
         System.out.println(arrLis.indexOf(1));
         System.out.println(arrLis.lastIndexOf(1));
         System.out.println("End of checking MyArrayList class");
 
-        // next all items are about MyLinkedList class only
+         next all items are about MyLinkedList class only
 
         MyLinkedList<String> string = new MyLinkedList<>();
         string.add("SE");
@@ -37,3 +37,31 @@ public class Main {
 
     }
 }
+
+ */
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+public class Main {
+    public static void Main(String[] args) {
+        MyArrayListStack<String> stack = new MyArrayListStack<>();
+
+        // Pushing elements onto the stack
+        stack.push("apple");
+        stack.push("banana");
+        stack.push("cherry");
+
+        // Popping elements from the stack
+        System.out.println(stack.pop()); // prints "cherry"
+        System.out.println(stack.pop());
+
+        // Peeking at the top element of the stack
+        System.out.println(stack.peek()); // prints "apple"
+
+        // Checking if the stack is empty
+        System.out.println(stack.isEmpty()); // prints "false"
+
+        // Checking the size of the stack
+        System.out.println(stack.size()); // prints "1"
+    }
+}
+
