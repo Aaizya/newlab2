@@ -8,3 +8,6 @@ public class MyArrayListStack<T> {
     public MyArrayListStack() {
         stack = new ArrayList<>();
     }
+    public void push(T element) {
+        stack.ADD(element)
+    }
