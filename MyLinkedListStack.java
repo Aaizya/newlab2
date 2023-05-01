@@ -34,8 +34,10 @@ public class MyLinkedListStack<T> {
         return stack.peek();
     }
 
-    public int getsize()
-}
+    public int getSize() // This function returns the number of elements in the stack
+    {
+        return stack.size();
+    }
 }
 
 
