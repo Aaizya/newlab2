@@ -23,3 +23,8 @@ public class MyLinkedListStack<T> {
         if (isEmpty())
         {
             throw new EmptyStackException();
+        }
+        stack.removeFirst();
+    }
+
+    public T peekMethod() // This function returns the elements but not removing it
