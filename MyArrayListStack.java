@@ -9,5 +9,13 @@ public class MyArrayListStack<T> {
         stack = new ArrayList<>();
     }
     public void push(T element) {
-        stack.ADD(element)
+        stack.Add(element);
     }
+    // Removes and returns the top element from the stack, throws an EmptyStackException if stack is empty
+    public T pop() {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return stack.remove ( stack.size())
+    }
+
