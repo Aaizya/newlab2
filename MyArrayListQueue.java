@@ -8,19 +8,21 @@ public class MyArrayListQueue<T> {
     {
         queue.add(data);
     }
+
     public boolean isEmpty()   // This function checks, is queue empty and also  returns true or false
     {
         return queue.isEmpty();
     }
-    public T dequeue ()   // This function removes and  also returns the front element of the queue
+
+    public T dequeue()   // This function removes and  also returns the front element of the queue
     {
-        if (isEmpty())
-        {
+        if (isEmpty()) {
             throw new NoSuchElementException();
         }
         return queue.remove(0);
     }
-    public T peek()
+
+    public T peek() // This function returns the front element of the queue without removing it.
     {
         if (isEmpty())
         {
@@ -29,9 +31,11 @@ public class MyArrayListQueue<T> {
         return queue.get(0);
     }
 
-    public int getsize()
+    public int getSize() // This function returns the number of elements in queue.
     {
         return queue.size();
     }
+}
+
 
 
